@@ -1,6 +1,6 @@
 image: oraclejdk8
 script:
-  - mvn clean test package
+  - mvn clean test 
 notify:
   email:
     recipients:
