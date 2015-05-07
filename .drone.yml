@@ -1,8 +1,6 @@
 image: oraclejdk8
 script:
-  - mvn package
-services:
-  - redis
+  - mvn clean test package
 notify:
   email:
     recipients:
