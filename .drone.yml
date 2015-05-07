@@ -1,0 +1,11 @@
+image: oraclejdk8
+env:
+  - GOPATH=/var/cache/drone
+script:
+  - mvn package
+services:
+  - redis
+notify:
+  email:
+    recipients:
+      - dmitry.igoshin@gmail.com
