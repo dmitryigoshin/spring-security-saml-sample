@@ -1,4 +1,4 @@
-image: oraclejdk8
+image: java:oraclejdk8
 script:
   - mvn clean test package
 notify:
